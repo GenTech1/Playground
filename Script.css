@@ -1,0 +1,8 @@
+// Get button element
+const button = document.getElementById("colorBtn");
+
+// When clicked, change background color randomly
+button.addEventListener("click", () => {
+  const colors = ["#FFB6C1", "#87CEEB", "#98FB98", "#FFD700", "#FFA07A"];
+  document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+});
